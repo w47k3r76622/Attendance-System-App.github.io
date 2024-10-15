@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../CSS/DashboardStyle.css" />
+    <!-- Font Awesome Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="../HTML/home.html" class="logo">
+                        <img src="../Images/admin.jpg">
+                        <span class="nav-item">Admin</span>
+                    </a></li>
+                <li><a href="../HTML/Dashboard.html">
+                        <i class="fas fa-menorah"></i>
+                        <span class="nav-item">Dashboard</span>
+                    </a></li>
+                <li><a href="../HTML/Adminreport.html">
+                        <i class="fas fa-database"></i>
+                        <span class="nav-item">Report</span>
+                    </a></li>
+                <li><a href="../HTML/AdminPanel.html">
+                        <i class="fas fa-chart-bar"></i>
+                        <span class="nav-item">Attendance</span>
+                    </a></li>
+                <li><a href="../HTML/adminSetting.html">
+                        <i class="fas fa-cog"></i>
+                        <span class="nav-item">Setting</span>
+                    </a></li>
+
+                <li><a href="../HTML/login.html" class="logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span class="nav-item">Log out</span>
+                    </a></li>
+            </ul>
+        </nav>
+
+
+        <section class="main">
+            <div class="main-top">
+                <h1>Dashboard</h1>
+                <i class="fas fa-user-cog"></i>
+            </div>
+
+            <div class="users">
+                <div class="card">
+                    <img src="../Images/Coder.png">
+                    <h4>Nasr Abdelazeez</h4>
+                    <p>Ui designer</p>
+                    <a class="profile-btn" href="../HTML/profile.html"><button>Profile</button></a>
+                </div>
+
+                <div class="card">
+                    <img src="../Images/Coder.png">
+                    <h4>Mahmoud Abdelwahab</h4>
+                    <p>DevOps Engineer</p>
+                    <a class="profile-btn" href="../HTML/profile.html"><button>Profile</button></a>
+                </div>
+
+                <div class="card">
+                    <img src="../Images/female coder.jpg">
+                    <h4>Nada Marei</h4>
+                    <p>DevOps Engineer</p>
+                    <a class="profile-btn" href="../HTML/profile.html"><button>Profile</button></a>
+                </div>
+
+                <div class="card">
+                    <img src="../Images/Coder.png">
+                    <h4>Mohamed Sharief</h4>
+                    <p>DevOps Engineer</p>
+                   <a class="profile-btn" href="../HTML/profile.html"><button>Profile</button></a>
+                </div>
+            </div>
+
+            <div class="charts">
+                <div class="charts-card">
+                    <p class="chart-title"> Time </p>
+                    <div id="bar-chart"></div>
+                </div>
+                <div class="charts-card">
+                    <p class="chart-title"> Attendance overview</p>
+                    <div id="area-chart"></div>
+                </div>
+            </div>
+
+
+        </section>
+        </section>
+    </div>
+    <!----------Scripts--------->
+<!---------Apex Charts liberary--------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.37.1/apexcharts.min.js"></script>
+<script src="../JS/Dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/login.css">
+</head>
+<body>
+	<img class="wave" src="./Images/background.jpg">
+	<div class="container">
+		<div class="img">
+			<img src="./Images/booking attend.svg">
+		</div>
+		<div class="login-content">
+				<form>
+				<img src="./Images/avatar.svg">
+				<h2 class="title">Welcome</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Username</h5>
+           		   		<input type="text" id="username" class="input" required>
+						<br>
+						<span id="userspan"></span>
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password" id="passwd" class="input" required>
+						   <br>
+						<span id="passwordspan"></span>
+            	   </div>
+            	</div>
+            	<a href="#">Forgot Password?</a>
+            	<input type="submit" class="btn" value="Login" id="loginsubmit" >
+				<input type="button" class="btn" value="Register" onclick="location.href='./HTML/index.html'">
+            </form>
+        </div>
+    </div>
+	<script type="text/javascript" src="./JS/login.js"></script>
+</body>
+</html>

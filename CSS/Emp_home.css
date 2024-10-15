@@ -1,0 +1,97 @@
+:root {
+    --navy: #2B3467;
+    --red: #EB455F;
+    --blue: #BAD7E9;
+    --creamy: #FCFFE7;
+    --lightgrey: rgb(226, 226, 226);
+    --white: #fff;
+  }
+
+body,html{
+     /* The image used */
+     background-image: url("../Images/homeImg.jpg");
+  
+     /* Full height */
+     height: 65%; 
+   
+     /* Center and scale the image nicely */
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+body
+{ 
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #2B3467;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 35vh;
+  }
+  
+  .topnav a:hover {
+    background-color: var(--creamy);
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #EB455F;
+    color: white;
+  }
+  
+  
+.topnav a.active:hover {
+    background-color: var(--creamy);
+    color:black;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  .container{
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .row{
+    flex:50%;
+    padding: 5px;
+  }
+.Emp_Home_img{
+   margin: 0vh 50vh;
+   height: 50vh;
+}
+.welcome_img{
+   margin-right: 100vh;
+   margin-left: -35vh;
+   margin-top: 60vh;
+   width: 105vh;
+   height: 50vh;
+   scale: 1.2;
+   transition: all 3s;
+}
+.welcome_img:hover{
+   scale: 1;
+ }
+ .logo{
+    float: right;
+    height: 7vh;
+    margin-right: 0vh;
+ }

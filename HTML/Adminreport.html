@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Font Awesome Cdn Link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="../CSS/bootstrap.css">
+  <link href="../CSS/font-awesome.css" rel="stylesheet" />
+  <link href="../CSS/Adminreport.css" rel="stylesheet" />
+  <link href="../CSS/report-menu.css" rel="stylesheet" />
+  <link rel="icon" href="../Images/3.png">
+  <title>Reports Page</title>
+</head>
+
+<body>
+  <!----------------Menu bar start------------>
+  <div class="divBody">
+
+  </div>
+  <!----------------Menu bar end-------------->
+
+
+  <h1 style="color:#2B3467; margin-left: 30px;  margin-top: 30px;">Reports</h1>
+  <div class="container" style="margin-top: 100px;">
+    <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
+    <label for="menu-icon"></label>
+    <nav class="My-nav">
+      <ul class="pt-5">
+        <li>
+          <a href="../HTML/home.html">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span class="nav-item">Home Page</span>
+          </a>
+        </li>
+        <li><a href="../HTML/Dashboard.html">
+          <i class="fas fa-menorah"></i>
+          <span class="nav-item">Dashboard</span>
+        </a></li>
+
+        <li><a href="../HTML/AdminPanel.html">
+          <i class="fas fa-chart-bar"></i>
+          <span class="nav-item">Attendance</span>
+        </a></li>
+
+        <li><a href="../HTML/adminSetting.html">
+          <i class="fas fa-cog"></i>
+          <span class="nav-item">Setting &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </a></li>
+
+        <li><a href="../HTML/login.html">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Log out &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </a></li>
+      </ul>
+    </nav>
+    <nav class="navbar navbar-expand navbar-dark mt-3 " id="supNave">
+      <div class="container" id="reportContainer">
+        <div class="navbar-nav  col-12">
+          <div class="col nav-item   m-3  ">
+            <a class="nav-link che  active h4 " data-bs-toggle="collapse" data-bs-target="#cardone" href="#">All
+              Employees</a>
+          </div>
+          <div class="col nav-item  m-3">
+            <a class="nav-link che  h4" data-bs-toggle="collapse" data-bs-target="#fulrepor" href="#">Full Report</a>
+          </div>
+          <div class="col nav-item  m-3">
+            <a class="nav-link che  h4" data-bs-toggle="collapse" data-bs-target="#late" href="#">Late Report</a>
+          </div>
+          <div class="col nav-item  m-3">
+            <a class="nav-link che  h4" data-bs-toggle="collapse" data-bs-target="#excuse" href="#">Excuse Report</a>
+          </div>
+          <div class="col nav-item  m-3">
+            <a class="nav-link che  h4" data-bs-toggle="collapse" data-bs-target="#birf" href="#">Employees Brief</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="accordion">
+      <div class="card">
+        <div class="collapse show" id="cardone" data-bs-parent="#accordion">
+          <div class="card-body text-center m-auto ">
+            <div class="container">
+              <table class="table table-bordered table-striped  table-hover text-center table-responsive">
+                <thead>
+                  <tr>
+                    <th class="h5 text-warning">Employee Name</th>
+                    <th class="h5 text-warning">Attendance Times </th>
+                    <th class="h5 text-warning">Late Times</th>
+                    <th class="h5 text-warning">Excuse Times</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="collapse" id="fulrepor" data-bs-parent="#accordion">
+          <div class="card-body text-center m-auto ">
+            <div class="container">
+              <table class="table table-bordered table-striped  table-hover text-center table-responsive">
+                <thead>
+                  <tr>
+                    <th class="h5 text-warning">Employee Name</th>
+                    <th class="h5 text-warning">Attendance Times </th>
+                    <th class="h5 text-warning">Late Times</th>
+                    <th class="h5 text-warning">Excuse Times</th>
+                    <th class="h5 text-warning">Absence Times</th>
+                    <th class="h5 text-warning">Attendance Time</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody2">
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="collapse" id="late" data-bs-parent="#accordion">
+          <div class="card-body text-center m-auto ">
+            <div class="container">
+              <table class="table table-bordered table-striped  table-hover text-center table-responsive">
+                <thead>
+                  <tr>
+                    <th class="h3 text-warning">Employee Name</th>
+                    <th class="h3 text-warning">Late Times</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody3">
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="collapse" id="excuse" data-bs-parent="#accordion">
+          <div class="card-body text-center m-auto ">
+            <div class="container">
+              <table class="table table-bordered table-striped  table-hover text-center table-responsive">
+                <thead>
+                  <tr>
+                    <th class="h3 text-warning">Employee Name</th>
+                    <th class="h3 text-warning">Excuse Times</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody4">
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="collapse" id="birf" data-bs-parent="#accordion">
+          <div class="card-body text-center m-auto ">
+            <div class="container">
+              <table class="table table-bordered table-striped  table-hover text-center table-responsive">
+                <thead>
+                  <tr>
+                    <th class="h5 text-warning">Employee Name</th>
+                    <th class="h5 text-warning">Address </th>
+                    <th class="h5 text-warning">Age</th>
+                    <th class="h5 text-warning">Email</th>
+                    <th class="h5 text-warning">Employee Type</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody5">
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="../JS/JQuery-3.3.1.min.js"></script>
+  <script src="../JS/popper.js"></script>
+  <script src="../JS/bootstrap.js"></script>
+  <script type="text/javascript" src="../JS/AdminReport.js"></script>
+</body>
+
+</html>

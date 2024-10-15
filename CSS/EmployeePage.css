@@ -1,0 +1,125 @@
+
+body{
+    overflow-x:visible;
+    margin: 0;
+    padding: 0
+}
+
+.navbar {
+    width: 100%;
+  background-color: rgb(19, 20, 20) ;
+  box-shadow: 0 0 15px 0px rgba(31, 148, 15, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
+
+}
+.container{
+    width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: #a0a1a3;
+   box-shadow: 0 0 15px 0px rgba(31, 148, 15, 0.5);
+}
+.nav-link.active {
+  color: #818c97;
+  box-shadow: 0 0 15px 0px rgba(31, 148, 15, 0.5);
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .navbar{
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  .navbar .navbar-nav {
+    flex-direction: row;
+  }
+  .container {
+    max-width: 768px;
+  }
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+    width:100vw;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.card {
+    width: 45%;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin: 5px;
+  padding: 10px;
+  border-radius: 0.25rem;
+}
+.cardButton {
+  border: 1px solid wheat;
+  border-radius: 5%;
+  font-size: large;
+}
+
+.cardButton:hover {
+  color: white;
+  background-color: #0b0b16;
+  cursor: pointer;
+}
+.cardButton:focus {
+  color: white;
+  background-color: #000000;
+}
+.collapse:not(.show) {
+  display: none;
+}
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../CSS/Registration.css">
+	<script src="https://smtpjs.com/v3/smtp.js">
+	</script>
+	</head>
+<style>
+
+</style>
+<body >
+	<img class="wave" src="../Images/background.jpg">
+	<div class="container">
+		<div class="img">
+			<img src="../Images/booking attend.svg">
+		</div>
+		<div class="login-content">
+			<form onsubmit="registerEmployee();return false">
+				<img src="../Images/avatar.svg">
+				<h2 class="title">Welcome</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Username</h5>
+           		   		<input type="text" id="newUsername" class="input" required>
+           		   </div>
+           		</div>
+				   <div class="input-div one">
+					<div class="i">
+							<i class="fas fa-user"></i>
+					</div>
+					<div class="div">
+							<h5>First Name</h5>
+							<input type="text" id="newFirstname" class="input" required>
+					</div>
+				 </div>
+				 <div class="input-div one">
+					<div class="i">
+							<i class="fas fa-user"></i>
+					</div>
+					<div class="div">
+							<h5>Last Name</h5>
+							<input type="text" id="newLastname" class="input" required>
+					</div>
+				 </div>
+
+				 <div class="input-div one">
+					<div class="i">
+							<i class="fas fa-user"></i>
+					</div>
+					<div class="div">
+							<h5>Email</h5>
+							<input type="email" id="newEmail" class="input" required>
+					</div>
+				 </div>
+				 <div class="input-div one">
+					<div class="i">
+							<i class="fas fa-user"></i>
+					</div>
+					<div class="div">
+							<h5>Address</h5>
+							<input type="text" id="address" class="input" required>
+					</div>
+				 </div>
+				 <div class="input-div one">
+					<div class="i">
+							<i class="fas fa-user"></i>
+					</div>
+					<div class="div">
+							<h5>Job</h5>
+							<input type="text" id="job" class="input" required>
+					</div>
+				 </div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password" id="newPassword" class="input" required>
+            	   </div>
+            	</div>
+				<div class="input-div one">
+					<div class="i">
+							<i class="fas fa-user"></i>
+					</div>
+					<div class="div">
+						<!-- <h5>Age</h5> -->
+								<input type="number" min="20" name="age" id="age" class="form-control" placeholder="Your Age" required>
+							</div>
+				 </div>
+           
+            	
+				<input type="submit" class="btn" value="Register" id="RegisterSubmit">
+				<a href="./login.html" class="d-block w-100 BtnForm text-decoration-none">
+					Do you have an account ? Log In
+				</a>
+            </form>
+        </div>
+    </div>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script type="text/javascript" src="../JS/register.js"></script>
+	
+
+</body>
+</html>

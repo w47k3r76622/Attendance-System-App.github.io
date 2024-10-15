@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>EmployeePage</title>
+
+
+<link rel="stylesheet" href="../CSS/EmployeePage.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="../JS/EmployeePage.js"></script>
+
+
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="../HTML/home.html">Employee Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../HTML/attendancePage.html">Attendance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="report.html">Reports</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <main class="container" id="main">
+    <div class="container_wrap">
+        <h1 id="username">Username</h1>
+        <div id="accordion" class="row">
+            <div class="card col-6">
+                <div>
+                    <button class="cardButton" id="monthButton" data-toggle="collapse" data-target="#cardone">Monthly
+                        Report</button>
+                </div>
+                <div class="collapse show" id="cardone" data-parent="#accordion">
+                    <div id="month" class="card-body text-center m-auto ">
+                        <p class="modalp">Present Days: <span class="modalspan badge-pill badge-secondary"
+                                id="attendanceCount"></span></p>
+                        <p class="modalp">Late Days: <span class="modalspan badge-pill badge-secondary"
+                                id="lateCount"></span></p>
+                        <p class="modalp">Absent Days: <span class="modalspan badge-pill badge-secondary"
+                                id="abscenceCount"></span></p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-6">
+                <div>
+                    <button class="cardButton" id="week" data-toggle="collapse" data-target="#cardtwo">Daily
+                        Report</button>
+                </div>
+                <div class="collapse" id="cardtwo" data-parent="#accordion">
+                    <div class="card-body text-center m-auto ">
+                        <p class="modalp">Arrival Time: <span class="modalspan badge-pill badge-secondary"
+                                id="attendentTime"></span></p>
+                        <p class="modalp">Leaving Time: <span class="modalspan badge-pill badge-secondary"
+                                id="leavingTime">17:00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </main>
+
+
+</body>
+
+</html>
